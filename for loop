@@ -20,7 +20,7 @@ c=0
 for i in L:
     if type(i)==int:
             c+=1
-            print()
+            print(c)
 
 #HOW MANY DIGIT ARE PRESENT  IN GIVEN STRING 
 S=input()
