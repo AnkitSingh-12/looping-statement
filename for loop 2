@@ -1,0 +1,109 @@
+
+# 1#WAP TO PRINT HOW MANY ELEMENT ARE PRESENT IN GIVEN CDT OR IMPLEMENT LENGTH FUNCTION
+S=input()
+c=0
+for i in S:
+    c+=1
+print(c)
+
+ 
+#2#WAP TO PRINT HOW MANY TIMES A GIVEN SUBSTRING IS PRESENT IS SPECIFIED MAIN STRING 
+S=input()
+SS= input()
+c=0
+for i in S :
+    if i in S:
+            c+=1
+print(c)
+
+
+
+#3#WAP TO PRINT HOW MANY INTEGER IS PRESENT IN GIVEN LIST
+L=eval(input())
+c=0
+for i in L:
+    if type(i)==int:
+            c+=1
+print(c)
+
+#4#HOW MANY DIGIT ARE PRESENT  IN GIVEN STRING 
+S=input()
+c=0
+for i in S:
+      if i.isdigit():
+            c+=1
+print(c)
+
+
+#5#HOW MANY ALPHABET ARE PRESENT IS GIVEN STRING 
+S=input()
+c=0
+for i in S:
+      if i.isalpha():
+            c+=1
+print(c)
+
+
+#6#WAP TO PRINT THE SUM OF DIGIT OF GIVEN string 
+S=input()
+s=0
+for i in S:
+    if i.isdigit():
+        s+=int(i)
+print(s)
+    
+
+#7#wap to print how many even no given string 
+S=input()
+c=0
+for i in S:
+    if i.isdigit():
+        if int(i)%2==0:
+            c+=1
+print(c)
+
+#or
+
+S=input()
+c=0
+for i in S:
+    if i in '02468':
+        c+=1
+print(c)
+
+
+#8#wap to print sum of odd digit of given string
+S=input()
+s=0
+for i in S:
+    if i in '13579':
+        s+=int(i)
+print(s)
+
+
+#9#wap to print how many special charter present in a given string
+
+S=input()
+c=0
+for i in S:
+    if i.isalnum()==False:
+        c+=1
+print(c)
+
+
+#10#wap TO PRINT HOW MANY ALPHABET AND DIGIT AND SPECIAL CHAR STRING
+S=input()
+ac=0
+bc=0
+nc=0
+for i in S:
+    if i.isalpha():
+        ac+=1
+    elif i.isdigit():
+        bc+=1 
+    else:
+        nc+=1
+print(ac)==0
+print(bc)==0
+print(nc)==0
+ 
