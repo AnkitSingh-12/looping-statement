@@ -1,4 +1,4 @@
-#wap to print how many times each and every element present in given string
+#1#wap to print how many times each and every element present in given string
 
 S=input()
 d={}
@@ -19,7 +19,7 @@ for i in S:
 print(d)
 
 
-#wap to print the sum of first n number
+#2#wap to print the sum of first n number
 n=int(input())
 s=0
 for i in range (1,n+1,1):
@@ -27,14 +27,14 @@ for i in range (1,n+1,1):
 print(s)
 
 
-# wap to print sum of fact of the given number 
+#3# wap to print sum of fact of the given number 
 n=int(input())
 fact=1
 for i in range(1,n+1):
     fact*=1
 print(fact)
 
-#wap to print even no of present between 1 to 50
+#4#wap to print even no of present between 1 to 50
 
 n =int(input())
 for i in range(1,51):
@@ -47,7 +47,7 @@ for i in range(2,51,2):
     print(i)
 
 
-#wap to program to print even no is given range
+#5#wap to program to print even no is given range
 LL=int(input())
 UL=int(input())
 for i in range(LL,UL+1):
