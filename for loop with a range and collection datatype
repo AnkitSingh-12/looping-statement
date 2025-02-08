@@ -1,0 +1,68 @@
+#1#wap to check given number is perfect or not
+
+n=int(input())
+dsum=0
+for i in range(1,n//2+1):
+    if n%i==1:
+        dsum+=i
+if n==dsum:
+    print('n is perfect')
+else:
+    print('n is not perfect')
+
+
+#2#wap to given reverse string without slicing
+
+s=input()
+rev=''
+for ele in s:
+    rev=ele+rev
+print(rev)
+
+
+#3#wap to reverse given string
+s=input()
+rev=''
+for ip in range(-1,-(len(s),-1)):
+    rev=rev+s[ip]
+print(rev)
+
+
+#4#wap a program to check how many vowel are present in given string
+S='HELLO'
+c=0
+for ele in S:
+    if ele in'aeiouAEIOU':
+        c+=1
+print(s)
+
+
+#5#wap a program to how many are vowel are in index position
+s='hello'
+c=0
+for ip in range(0,len(s),2):
+    if s[ip] in 'aeiouAEIOU':
+        c+=1
+print(c)
+
+#6#wap to print the index postion of consonant
+s='HELLO123'
+for ip in range(len(s)):
+    if s[ip].isalpha():
+        if s[ip]not in'aeiouAEIOU':
+            print(ip)
+
+#7#wap to print index positon of digit
+s='HELLO123'
+for ip in range(len(s)):
+    if s[ip].isdigit():
+        print(ip)
+
+
+#8#wap to find sum of digit present in even index position in string 
+s='HELLO123'
+sum=0
+for ip in range(0,len(s),2):
+    if s[ip].isdigit():
+        sum+=int(s[ip])
+        print(ip)
