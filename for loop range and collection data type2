@@ -1,0 +1,169 @@
+
+#9#wapn to find sum of digit present in even index position in string 
+s='HELLO123'
+sum=0
+for ip in range(0,len(s),2):
+    if s[ip].isdigit():
+        sum+=int(s[ip])
+        print(ip)
+
+
+
+#10# wap to print sum of odd index postion of even digit
+S=input()
+s=0
+for ip in range(1,len(S),2):
+    if S[ip] in '02468':
+        s+=ip
+print(s)
+
+#output='123456'
+
+
+#11#wap to print sum of digit in given string 
+S=input()
+s=0
+for ele in S:
+    if ele.isdigit():
+        s+=int(ele)
+print(s)
+
+#output=hekko123
+
+#12#wap to print find the sum of index postion of given digit 
+
+S=input()
+s=0
+for ip in range(len(S)):
+    if S[ip].isdigit():
+        s+=int(S[ip])
+print(s)
+  
+
+  #output 123456    
+
+
+#13#wap to print sum of even digit of even index position
+S=input()
+s=0
+for ip in range(0,len(S),2):
+    if S[ip] in '02468':
+        s+=int(S[ip])
+print(s)
+
+
+
+#output=428163
+
+#14#wap to print sum of odd digit of odd index position
+
+S=input()
+s=0
+for ip in range(1,len(S),2):
+    if S[ip] in '13579':
+        s+=int(S[ip])
+print(s)
+
+
+#output=5281739
+
+#15#wap to print  sum  of even digit of odd index postion
+
+S=input()
+s=0
+for ip in range(1,len(S),2):
+    if S[ip] in '02468':
+        s+=int(S[ip])
+print(s)
+
+
+#output=90452168
+
+#16#wap to print  sum  of odd digit of even index postion
+
+S=input()
+s=0
+for ip in range(0,len(S),2):
+    if S[ip] in '13579':
+        s+=int(S[ip])
+print(s)
+
+
+#output= 90452168
+
+#17#wap to print  sum  of even index  postion of even digit
+
+S=input()
+s=0
+for ip in range(0,len(S),2):
+    if S[ip] in '02468':
+        s+=ip
+print(s)
+  
+#output=5281739
+
+#18#wap to print  sum  of odd index  postion of odd digit
+
+S=input()
+s=0
+for ip in range(1,len(S),2):
+    if S[ip] in '13579':
+        s+=ip
+print(s)
+
+#19#wap to print  sum  of even index  postion of odd digit
+
+S=input()
+s=0
+for ip in range(0,len(S),2):
+    if S[ip] in '13579':
+        s+=ip
+print(s)
+
+
+#20# wap to print to replace all the vowels and their index postion 
+
+S='hello'
+new=''
+for ip in range(len(S)):
+        if S[ip] in'aeiouAEIOU':
+            new+=str(ip)
+        else:
+            new+=S[ip]
+print(new)
+
+#output= "h1ll4"
+
+
+#21# wap to print to replace all the consonent  and their index postion 
+
+S='HARSHAD'
+new=''
+for ip in range(len(S)):
+    if S[ip].isalpha():
+        if S[ip] not in'aeiouAEIOU':
+            new+=str(ip)
+    else:
+        new+=S[ip]
+print(new)
+
+
+
+
+#22# wap to print repalce all digit with their index position
+
+
+S='A1B2C3'
+new=''
+for ip in range(len(S)):
+    if S[ip].isdigit():
+            new+=str(ip)
+    else:
+        new+=S[ip]
+print(new)
+
+
+#output=A1B3C5
+
+
+ 
