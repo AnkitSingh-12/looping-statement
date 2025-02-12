@@ -1,0 +1,58 @@
+#1#wap to count how many times given substring specified string 
+S=input()
+SS=input()
+c=0
+for ip in range (0,len(S)-len(SS)+1) :
+    if S[ip:ip+len(SS)]==SS:
+        c+=1
+print(c)
+
+#
+#while loop code
+
+
+ 
+#1#wap to program to print even no 1 to 50
+
+a=2
+while a<51:
+   if a%2==0:
+        print(a)
+        a+=2
+
+       # or 
+a=2
+while a<51:
+    print(a)
+    a+=2
+
+
+#2#wap of program to check given no or perfect no in for loop and while loop
+
+# while loop
+n=int(input())
+dsum=0
+i=1
+while i<n//2+1:
+    if n%i==0:
+        dsum+=i
+    i+=1
+if n==dsum:
+    print('n is perfect')
+else:
+    print('n is not perfect')
+
+
+    #or 
+
+n=int(input())
+dsum=0
+for n in range (1,n//2+1):
+    if n%i==0:
+        dsum+=i
+   
+if n==dsum:
+    print('n is perfect')
+else:
+    print('n is not perfect')
+
