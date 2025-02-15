@@ -1,0 +1,98 @@
+#1#wap to print the sum of first n number
+ 
+n= int(input())
+sum=0
+i=1
+while i<n+1:
+    sum+=i
+    i+=1
+print(sum)
+
+
+#2# wap to print sum of fact of the given  number
+n=int(input())
+fact=1
+i=1
+while i<n+1:
+    fact*=i
+    i+=1
+print(fact)
+#3# WAP TO PROGRAM TO PRINT EVEN NO IS GIVEN RANGE
+LL=1
+UL=20
+i=1
+while i<=20:
+    if i%2==0:
+        print(i)
+    i+=1
+#4#WAP A PRINT THE HOW MANY ARE VOWEL ARE IN INDEX POSITION
+S='hello'
+c=0
+ip=0
+while ip<len(S):
+    if S[ip] in'aeiouAEIOU':
+        c+=1
+    ip+=2
+print(c)
+
+#5#WAP TO PRINT THE INDEX POSITION OF THE CONSOSENT 
+
+S=str(input())
+ip=0
+while ip<len(S):
+    if S[ip].isalpha():
+        if S[ip] not in 'aeiouAEIOU':
+            print(ip)
+        ip+=1
+
+#6# WAP TO FIND THE SUM OF DIGIT PRESENT IN EVEN INDEX POSTION
+
+S='hello123'
+sum=0
+ip=0
+while ip<len(S):
+    if S[ip].isdigit():
+        sum+=int(S[ip])
+    ip+=2
+print(sum)
+#7#WAP TO PRINT INDEX POSTION OF THE DIGIT 
+
+S='hello123'
+ip=0
+while ip<len(S):
+    if S[ip].isdigit():
+           print(ip)
+    ip+=1
+#8#WAP TO PRINT SUM OF ODD INDEX POSITON OF EVEN DIGIT
+S=input()
+sum=0
+ip=0
+while ip<len(S):
+    if S[ip] in '13579':
+        sum+=int(S[ip])
+    ip+=2
+print(sum)
+
+#9#WAP TO PRINT SUM OF EVEN DIGIT IN EVEN INDEX POSTION
+
+
+S=input()
+sum=0
+ip=1
+while ip<len(S):
+    if S[ip] in'02468':
+        sum+=int(S[ip])
+    ip+=2
+print(sum)
+
+#10#WAP TO PRINT FIND THE SUM OF INDEX POSITON OF GIVEN DIGIT 
+
+
+S=input()
+sum=0
+ip=0
+while ip<len(S):
+    if S[ip].isdigit():
+        sum+=int(S[ip])
+    ip+=1
+print(sum)
