@@ -1,4 +1,6 @@
 # WAP TO PRINT HOW MANY ELEMENT ARE PRESENT IN GIVEN CDT OR IMPLEMENT LENGTH FUNCTION
+
+
 S=input()
 c=0
 for i in S:
@@ -6,6 +8,8 @@ for i in S:
     print(c)
  
 #WAP TO PRINT HOW MANY TIMES A GIVEN SUBSTRING IS PRESENT IS SPECIFIED MAIN STRING 
+
+
 S=input()
 SS= input()
 c=0
@@ -15,6 +19,8 @@ for i in S :
             print(c)
 
 #WAP TO PRINT HOW MANY INTEGER IS PRESENT IN GIVEN LIST
+
+
 L=eval(input())
 c=0
 for i in L:
@@ -23,6 +29,8 @@ for i in L:
             print(c)
 
 #HOW MANY DIGIT ARE PRESENT  IN GIVEN STRING 
+
+
 S=input()
 c=0
 for i in S:
@@ -30,6 +38,8 @@ for i in S:
             c+=1
             print(c)
 #HOW MANY ALPHABET ARE PRESENT IS GIVEN STRING 
+
+
 S=input()
 c=0
 for i in S:
