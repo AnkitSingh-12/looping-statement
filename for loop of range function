@@ -20,6 +20,8 @@ print(d)
 
 
 #2#wap to print the sum of first n number
+
+
 n=int(input())
 s=0
 for i in range (1,n+1,1):
@@ -28,6 +30,8 @@ print(s)
 
 
 #3# wap to print sum of fact of the given number 
+
+
 n=int(input())
 fact=1
 for i in range(1,n+1):
@@ -48,6 +52,8 @@ for i in range(2,51,2):
 
 
 #5#wap to program to print even no is given range
+
+
 LL=int(input())
 UL=int(input())
 for i in range(LL,UL+1):
