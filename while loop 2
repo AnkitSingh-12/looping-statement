@@ -96,3 +96,124 @@ while ip<len(S):
         sum+=int(S[ip])
     ip+=1
 print(sum)
+
+
+#11#SUM OF ODD DIGIT IN ODD INDEX POSTION
+
+
+S=input()
+sum=0
+ip=1
+while ip<len(S):
+    if S[ip] in'13579':
+        sum+=int(S[ip])
+    ip+=2
+print(sum)
+
+
+#12#SUM OF EVEN DIGIT OF ODD INDEX POSTION
+
+S=input()
+sum=0
+ip=1
+while ip<len(S):
+    if S[ip] in'02468':
+        sum+=ip
+    ip+=2
+print(sum)
+
+#13#SUM OF EVEN INDEX POSTION OF EVEN DIGIT 
+
+
+S=input()
+sum=0
+ip=0
+while ip<len(S):
+    if S[ip] in'02468':
+        sum+=ip
+    ip+=2
+print(sum)
+
+#14#SUM OF ODD INDEX POSITION OF ODD DIGIT 
+
+S=input()
+sum=0
+ip=0
+while ip<len(S):
+    if S[ip] in'13579':
+        sum+=ip
+    ip+=1
+print(sum)
+
+
+
+#15#SUM OF EVEN INDEX POSTITON OF ODD DIGIT 
+
+S=input()
+sum=0
+ip=0
+while ip<len(S):
+    if S[ip] in'13579':
+        sum+=ip
+    ip+=2
+print(sum)
+
+
+#16# WAP TO REPLACE ALL THE VOWEL WITH THEIR INDEX POSTION
+
+S=input()
+new=''
+ip=0
+while ip< len(S):
+    if S[ip] in 'aeiouAEIOU':
+        new+=str(ip)
+    else:
+         new+=S[ip]
+    ip+=1
+print(new)
+
+
+#17#WAP TO REPLACE ALL THE CONSONENT WITH THEIR INDEX POSTION
+
+
+S='hai@123'
+new=''
+ip=0
+while ip< len(S):
+    if S[ip].isalpha():
+        if S[ip] not in'aeiouAEIOU':
+            new+=str(ip)
+        else:
+            new+=S[ip]
+    ip+=1
+print(new)
+
+
+
+#18#WAP TO REAPLACE ALL DIGIT WITH THEIR INDEX POSTION
+
+
+S='a1b2c3'
+new=''
+ip=0
+while ip<len(S):
+    if S[ip].isdigit():
+        new+=str(ip)
+    else:
+        new+=S[ip]
+    ip+=1
+print(new)
+
+
+
+#19#REVERSE  A GIVEN STRING WITHOUT USING WITHOUT SLICING OR BUILTIN METHOD 
+
+
+
+S=input()
+rev=''
+ip=-1
+while ip>-(len(S)+1):
+    rev+=S[ip]
+    ip-=1
+print(rev)
