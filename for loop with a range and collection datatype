@@ -21,6 +21,8 @@ print(rev)
 
 
 #3#wap to reverse given string
+
+
 s=input()
 rev=''
 for ip in range(-1,-(len(s),-1)):
@@ -29,6 +31,8 @@ print(rev)
 
 
 #4#wap a program to check how many vowel are present in given string
+
+
 S='HELLO'
 c=0
 for ele in S:
@@ -38,6 +42,8 @@ print(s)
 
 
 #5#wap a program to how many are vowel are in index position
+
+
 s='hello'
 c=0
 for ip in range(0,len(s),2):
@@ -46,6 +52,8 @@ for ip in range(0,len(s),2):
 print(c)
 
 #6#wap to print the index postion of consonant
+
+
 s='HELLO123'
 for ip in range(len(s)):
     if s[ip].isalpha():
@@ -53,6 +61,8 @@ for ip in range(len(s)):
             print(ip)
 
 #7#wap to print index positon of digit
+
+
 s='HELLO123'
 for ip in range(len(s)):
     if s[ip].isdigit():
@@ -60,6 +70,8 @@ for ip in range(len(s)):
 
 
 #8#wap to find sum of digit present in even index position in string 
+
+
 s='HELLO123'
 sum=0
 for ip in range(0,len(s),2):
