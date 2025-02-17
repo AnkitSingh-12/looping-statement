@@ -1,0 +1,75 @@
+####extraction of individual digit  from given no ####
+#wap to sum of individual digit of given no 
+
+n=int(input())
+dummy=n
+sum=0
+while dummy>0:
+    rem=dummy%10
+    dummy=dummy//10
+    sum+=rem
+print(sum)
+
+
+#wap to reverse a given number
+
+n=int(input())
+rev=0
+while n>0:
+    rem=n%10
+    n=n//10
+    rev=rev*10+rem
+print(rev)
+
+
+#wap to print it is disarium no or not?
+
+
+n=int(input())
+sum=0
+dummy=n
+l=len(str(n))
+while dummy>0:
+    rem=dummy%10
+    dummy=dummy//10
+    sum+=rem**l
+    l-=1
+if sum==n:
+    print('it is disarium')
+else:
+     print('it is not discarium')
+
+
+#wap tp check given no is armstrong number or not 
+
+n=int(input())
+sum=0
+dummy=n
+l=len(str(n))
+while dummy>0:
+    rem=dummy%10
+    dummy=dummy//10
+    sum+=rem**l
+if sum==n:
+    print('it is armstrong')
+else:
+     print('it is not armstrong')
+
+
+
+
+#wap to check palindrome or not 
+
+
+n=int(input())
+rev=0
+dummy=n
+while dummy>n:
+    rem=dummy%10
+    dummy=dummy//10
+    rev=rev*10+rem
+if n==rev:
+    print('it is a palindrome')
+else:
+    print('it is not a palindrome')
+  
