@@ -73,3 +73,18 @@ if n==rev:
 else:
     print('it is not a palindrome')
   
+
+
+# wap to print it is harshad no or  not 
+
+n=int(input())
+dummy=n
+sum=0
+while dummy>0:
+    rem=dummy%10
+    dummy=dummy//10
+    sum+=rem
+if sum%n:
+    print('it is harshad no ')
+else:
+    print(' it not a harshad no')
