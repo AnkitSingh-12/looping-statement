@@ -12,7 +12,17 @@ else :
    print('ss is not available')
 
 
-
+# while else 
+s=input()
+ss=input()
+ip =0
+while ip <len(s):
+    if s[ip:ip+len(ss)]==ss:
+      print(ip)
+      break
+    ip+=1
+else :
+   print('ss is not available')
 
 
 
