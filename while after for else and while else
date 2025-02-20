@@ -1,5 +1,23 @@
+#1#wap to print index position of specific substring other print it is not available 
 
-#wap to check prime or not 
+# for else 
+
+s= input()
+ss=input()
+for ip in range (len(s)):
+   if s[ip:ip+len(ss)]==ss:
+      print(ip)
+      break
+else :
+   print('ss is not available')
+
+
+
+
+
+
+
+#2#wap to check prime or not 
 
 #for else 
 
