@@ -2,3 +2,56 @@
 #WHILE LOOP INSIDE FOR LOOP
 #FOR LOOP INSIDE WHILE LOOP
 #WHILE LOOP INSIDE FOR LOOP 
+
+
+#1#
+#for loop inside for loop
+#both loop are runinng completly
+
+for i in range(1,6):
+    for j in range(1,6):
+        print(i,j)
+
+#breaking of inner loop with inner loop 
+
+for i in range(1,6):
+    for j in range (1,6):
+        print(i,j)
+        if j==3:
+            break
+
+#breaking of inner loop  with outer loop
+for i in range (1,6):
+    for j in range (1,6):
+        print(i,j)
+        if i==3:
+            break
+
+#breaking of outer loopn with outer loop
+for i in range(1,6):
+    for j in range (1,6):
+        print(i,j)
+    if i==3:
+        break
+
+
+for i in range(1,6):
+    if i ==3:
+        break
+    for j in range(1,6):
+        print(i,j)
+
+
+#breaking of outerloop with inner loop
+for i in range (1,6):
+    if i==3:
+        break
+    for j in range(1,6):
+        print(i,j)
+
+
+for i in range(1,6):
+    for j in range(1,6):
+        print(i,j)
+    if j==5:
+        break
