@@ -25,9 +25,46 @@ else :
    print('ss is not available')
 
 
+#2#wap to print index postion n occurence 
+
+# for else 
+
+s=input()
+ss=input()
+n=int(input())
+c=0
+for ip in range (len(s)):
+    if s[ip:ip+len(ss)]==ss:
+        c+=1
+        if c==n:
+          print(ip)
+          break    
+else:
+    print(ss,' is not available')
+
+#while  else 
 
 
-#2#wap to check prime or not 
+s=input()
+ss=input()
+n=int(input())
+c=0
+ip=0
+while ip<len(s):
+    if s[ip:ip+len(ss)]==ss:
+        c+=1
+        if c==n:
+          print(ip)
+          break 
+    ip+=1   
+else:
+    print(ss,' is not available')
+
+
+
+
+
+#3#wap to check prime or not 
 
 #for else 
 
