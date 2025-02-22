@@ -21,6 +21,7 @@ for i in range(1,6):
             break
 
 #breaking of inner loop  with outer loop
+
 for i in range (1,6):
     for j in range (1,6):
         print(i,j)
@@ -28,6 +29,7 @@ for i in range (1,6):
             break
 
 #breaking of outer loopn with outer loop
+
 for i in range(1,6):
     for j in range (1,6):
         print(i,j)
@@ -43,6 +45,7 @@ for i in range(1,6):
 
 
 #breaking of outerloop with inner loop
+
 for i in range (1,6):
     if i==3:
         break
@@ -60,6 +63,7 @@ for i in range(1,6):
 
 #while inside a for loop 
 #both inner loop and outer loop is completely
+
 for i in range (1,6):
     j=1
     while j<6:
@@ -68,6 +72,7 @@ for i in range (1,6):
 
 
 #breaking of inner loop with inner loop value
+
 for i in range (1,6):
     j=1
     while j<6:
