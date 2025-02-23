@@ -125,6 +125,7 @@ while i<6:
     i+=1
 
 #breaking of inner loop with inner loop value
+
 i=1
 while i<6:
     for j in range (1,6):
@@ -134,6 +135,7 @@ while i<6:
     i+=1
 
 #breaking of inner loop with outer loop value
+
 i=1
 while i<6:
     for j in range (1,6):
@@ -144,6 +146,7 @@ while i<6:
 
 
 #breaking of outer  loop with outer loop value
+
 i=1
 while i<6:
     for j in range (1,6):
@@ -153,6 +156,7 @@ while i<6:
     i+=1
 
 # breaking of outer loop with inner loop value 
+
 i=1
 while i<6:
     for j in range (1,6):
