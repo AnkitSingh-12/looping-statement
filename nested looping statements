@@ -166,9 +166,10 @@ while i<6:
     i+=1
 
 
-#--------------------------------------------------------#
+#------------------------------------------------------------------------#
 #while inside while loop 
 # both inner loop and outer loop running completly
+
 i=1
 while i<6:
     j=1
@@ -178,6 +179,7 @@ while i<6:
     i+=1
 
 #breaking of inner loop with inner loop value
+
 i=1
 while i<6:
     j=1
@@ -189,6 +191,7 @@ while i<6:
     i+=1
 
 #breaking of inner loop with outer loop value
+
 i=1
 while i<6:
     j=1
@@ -201,6 +204,7 @@ while i<6:
 
 
 #breaking of outer  loop with outer loop value
+
 i=1
 while i<6:
     j=1
