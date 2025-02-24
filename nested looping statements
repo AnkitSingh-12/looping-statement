@@ -164,3 +164,26 @@ while i<6:
     if j==5:
       break
     i+=1
+
+
+#--------------------------------------------------------#
+#while inside while loop 
+# both inner loop and outer loop running completly
+i=1
+while i<6:
+    j=1
+    while j<6:
+        print(i,j)
+        j+=1
+    i+=1
+
+#breaking of inner loop with inner loop value
+i=1
+while i<6:
+    j=1
+    while j<6:
+        print(i,j)
+        if j==3:
+            break
+        j+=1
+    i+=1
