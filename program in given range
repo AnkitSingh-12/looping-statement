@@ -52,3 +52,20 @@ for num in range (LL,UL+1):
             c+=1
             if c%2==0:
                 print(num)
+
+
+
+#2#wap to print   3 prime no in  given range 
+
+LL=int(input())
+UL=int(input())
+c=0
+for num in range (LL,UL+1):
+    if num>1:
+        for i in range(2,num//2+1):
+            if num%i==0:
+                break      
+        else:
+            c+=1
+            if c%3==0:
+                print(num)
