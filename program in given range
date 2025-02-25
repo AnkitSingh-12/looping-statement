@@ -1,0 +1,23 @@
+#1#wap to print perfect no in given range 
+
+LL=int(input())
+UL=int(input())
+for num in range (LL,UL+1):
+    dsum=0
+    for i in range (1,num//2+1):
+        if num%i==0:
+            dsum+=i
+    if dsum==num:
+        print(num)
+
+#2#wap to print prime no in given range 
+
+LL=int(input())
+UL=int(input())
+for num in range (LL,UL+1):
+    if num>1:
+        for i in range(2,num//2+1):
+            if num%i==0:
+                break      
+        else:
+            print(num)
