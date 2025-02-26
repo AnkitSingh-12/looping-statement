@@ -56,7 +56,7 @@ for n in range (LL,UL+1):
         if c%2==0:
             print(n)
 
-#2#wap to print prime no in given range 
+#5#wap to print prime no in given range 
 
 LL=int(input())
 UL=int(input())
@@ -67,24 +67,8 @@ for num in range (LL,UL+1):
                 break      
         else:
             print(num)
-
-
-#3#wap to print amongstrong no in given range 
-
-LL=int(input())
-UL=int(input())
-for num in range (LL,UL+1):
-   d=num
-   sum=0
-   L=len(str(num))
-   while d>0:
-      rem=d%10
-      d=d//10
-      sum+=rem**L
-   if sum==num:
-      print(num)
       
-#2#wap to print   2 prime no in given range 
+#6#wap to print   2 prime no in given range 
 
 LL=int(input())
 UL=int(input())
@@ -101,7 +85,7 @@ for num in range (LL,UL+1):
 
 
 
-#2#wap to print   3 prime no in  given range 
+#7#wap to print   3 prime no in  given range 
 
 LL=int(input())
 UL=int(input())
