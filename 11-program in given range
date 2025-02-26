@@ -10,6 +10,21 @@ for num in range (LL,UL+1):
     if dsum==num:
         print(num)
 
+#2#wap to print 2nd perfect no in given range 
+
+LL=int(input())
+UL=int(input())
+c=0
+for num in range (LL,UL+1):
+    dsum=0
+    for i in range (1,num//2+1):
+        if num%i==0:
+            dsum+=i
+    if dsum==num:
+         c+=1
+         if c%2==0:
+            print(num)
+
 #2#wap to print prime no in given range 
 
 LL=int(input())
