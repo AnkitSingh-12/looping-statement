@@ -25,6 +25,37 @@ for num in range (LL,UL+1):
          if c%2==0:
             print(num)
 
+
+#3#wap to print palindrome no given range 
+LL=int(input())
+UL=int(input())
+for n in range (LL,UL+1):
+    dummy=n
+    rev=0
+    while dummy>0:
+        rem=dummy%10
+        dummy=dummy//10
+        rev=rev*10+rem
+    if n==rev:
+        print(n)
+
+
+#4#wap to print  2palindrome no given range 
+LL=int(input())
+UL=int(input())
+c=0
+for n in range (LL,UL+1):
+    dummy=n
+    rev=0
+    while dummy>0:
+        rem=dummy%10
+        dummy=dummy//10
+        rev=rev*10+rem
+    if n==rev:
+        c=+1
+        if c%2==0:
+            print(n)
+
 #2#wap to print prime no in given range 
 
 LL=int(input())
