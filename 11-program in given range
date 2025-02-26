@@ -196,3 +196,42 @@ for num in range (LL,UL+1):
       c+=1
       if c%2==0:
         print(num)
+
+
+#14# WAP TO PRINT GIVEN NO SPECIAL NO IN RANGE 
+
+LL = int(input())
+UL = int(input())
+for n in range(LL, UL + 1): 
+    dummy = n  
+    sum = 0  
+    while dummy > 0:
+        rem = dummy % 10  
+        dummy = dummy // 10
+        fact = 1  
+        for i in range(1, rem + 1): 
+            fact *= i
+        sum += fact  
+    if sum == n: 
+        print(n)  
+
+
+#15 WAP TO PRINT GIVEN NO 2ndSPECIAL NO IN RANGE 
+
+LL = int(input())
+UL = int(input())
+c=0
+for n in range(LL, UL + 1): 
+    dummy = n  
+    sum = 0  
+    while dummy > 0:
+        rem = dummy % 10  
+        dummy = dummy // 10
+        fact = 1  
+        for i in range(1, rem + 1): 
+            fact *= i
+        sum += fact  
+    if sum == n: 
+        c+=1
+        if c%2==0:
+           print(n)  
