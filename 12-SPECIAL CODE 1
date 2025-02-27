@@ -81,3 +81,18 @@ while c< target:
              print(n)
              break
     n+=1   
+
+#6#wap to print 6 to 10 th perfect no 
+n=1
+c=0
+while c< 10:
+    dsum=0
+    for i in range (1,n//2+1):
+        if n%i==0:
+            dsum+=i 
+    if dsum==n:
+        print(n)
+        c+=1
+        if c>=6:
+            break
+    n+=1
