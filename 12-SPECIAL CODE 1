@@ -33,3 +33,16 @@ while c<target:
             print(n)
     n+=1
 
+#3# wap to print 6th to 10 th prime no 
+
+n=2
+c=0
+while c<10:
+    for i in range(2,n//2+1):
+        if n%i==0:
+            break
+    else:
+        c+=1
+        if c>=6:
+            print(n)
+    n+=1
