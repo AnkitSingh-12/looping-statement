@@ -83,6 +83,7 @@ while c< target:
     n+=1   
 
 #6#wap to print 6 to 10 th perfect no 
+
 n=1
 c=0
 while c< 10:
@@ -97,6 +98,7 @@ while c< 10:
             break
     n+=1
 
+#-------------------------------------------------------------------------#
 
 #7# wap to print first to 10 th  armastrong no 
 
@@ -116,7 +118,7 @@ while c<10:
     n+=1
 
 
-# wap to print 10 th armstrong no 
+#8# wap to print 10 th armstrong no 
 c = 0  
 n = 1 
 target =int(input())
@@ -135,7 +137,7 @@ while c<target:
             break  
     n += 1  
 
-# wap to print 6 to 10 armstrong no 
+#9# wap to print 6 to 10 armstrong no 
 
 c = 0  
 n = 1 
@@ -155,7 +157,7 @@ while c<10:
 
 
 
-#wap tp print first to 10 th disarium  no 
+#10#wap tp print first to 10 th disarium  no 
 
 c=0
 n=1
@@ -175,7 +177,7 @@ while c<target:
     n+=1
 
 
-# wap to print 10 th disarium no 
+#11# wap to print 10 th disarium no 
 c = 0  
 n = 1 
 target =int(input())
@@ -195,7 +197,7 @@ while c<target:
             break  
     n += 1
 
-# wap to print 6 to 10 th disarium no 
+#12#wap to print 6 to 10 th disarium no 
 
 
 c = 0  
