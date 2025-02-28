@@ -152,3 +152,65 @@ while c<10:
         if c >=6:  
             print(n) 
     n += 1 
+
+
+
+#wap tp print first to 10 th disarium  no 
+
+c=0
+n=1
+target= int(input())
+while c<target:
+    dummy=n
+    sum=0
+    l=len(str(n))
+    while dummy>0:
+        rem=dummy%10
+        dummy=dummy//10
+        sum+=rem**l
+        l-=1
+    if n==sum:
+        c+=1
+        print(n)
+    n+=1
+
+
+# wap to print 10 th disarium no 
+c = 0  
+n = 1 
+target =int(input())
+while c<target:
+    dummy= n 
+    sum = 0  
+    l = len(str(n))  
+    while dummy > 0:
+        rem = dummy% 10  
+        dummy = dummy // 10  
+        sum += rem ** l  
+        l-=1
+    if n == sum: 
+        c += 1  
+        if c == 10:  
+            print(n)
+            break  
+    n += 1
+
+# wap to print 6 to 10 th disarium no 
+
+
+c = 0  
+n = 1 
+while c<10:
+    dummy = n 
+    sum = 0  
+    l = len(str(n))  
+    while dummy > 0:
+        rem = dummy % 10  
+        dummy = dummy // 10  
+        sum += rem ** l  
+        l-=1
+    if n == sum: 
+        c += 1  
+        if c >=6:  
+            print(n) 
+    n += 1 
