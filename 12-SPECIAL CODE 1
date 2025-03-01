@@ -368,3 +368,56 @@ while c< 10:
         if c>=6:
          print(n)
     n+=1
+
+#----------------------------------------------------------------------------#
+
+# wap to print first to 10 harshad no 
+
+n=1
+c=0
+target=int(input())
+while c< target:
+    dummy= n
+    sum=0
+    while dummy>0:
+        rem=dummy%10
+        dummy=dummy//10
+        sum+=rem
+    if sum%n==0:
+        c+=1
+        print(n)
+    n+=1
+
+# wap to print  10 th harshad no 
+n=1
+c=0
+target=int(input())
+while c< target:
+    dummy= n
+    sum=0
+    while dummy>0:
+        rem=dummy%10
+        dummy=dummy//10
+        sum+=rem
+    if n%sum==0:
+        c+=1
+        if c==target:
+            print(n)
+            break
+    n+=1
+
+# wap to print 6 to 10 harshad no  
+n=1
+c=0
+while c< 10:
+    dummy= n
+    sum=0
+    while dummy>0:
+        rem=dummy%10
+        dummy=dummy//10
+        sum+=rem
+    if n%sum==0:
+        c+=1
+        if c>=6:
+            print(n)
+    n+=1
