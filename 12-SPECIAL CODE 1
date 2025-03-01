@@ -315,3 +315,56 @@ while c<10:
            print(n) 
            break
      n+=1
+
+
+#--------------------------------------------------------------------------#
+#18# wap to print first to 10 th palindrome no 
+c=0
+n=1
+target= int(input())
+while c< target:
+    dummy = n 
+    rev=0
+    while dummy>0:
+        rem =dummy%10
+        dummy=dummy//10
+        rev=rev*10+rem
+    if n==rev:
+        c+=1
+        print(n)
+    n+=1
+
+#19# wap to print first 10 th palindrome no
+c=0
+n=1
+target= int(input())
+while c< target:
+    dummy = n 
+    rev=0
+    while dummy>0:
+        rem =dummy%10
+        dummy=dummy//10
+        rev=rev*10+rem
+    if n==rev:
+        c+=1
+        if c==target:
+         print(n)
+         break
+    n+=1
+
+#20#wap to print first 6 to 10 palindrome no
+
+c=0
+n=1
+while c< 10:
+    dummy = n 
+    rev=0
+    while dummy>0:
+        rem =dummy%10
+        dummy=dummy//10
+        rev=rev*10+rem
+    if n==rev:
+        c+=1
+        if c>=6:
+         print(n)
+    n+=1
