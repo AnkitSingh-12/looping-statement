@@ -389,6 +389,7 @@ while c< target:
     n+=1
 
 # wap to print  10 th harshad no 
+
 n=1
 c=0
 target=int(input())
@@ -407,6 +408,7 @@ while c< target:
     n+=1
 
 # wap to print 6 to 10 harshad no  
+
 n=1
 c=0
 while c< 10:
