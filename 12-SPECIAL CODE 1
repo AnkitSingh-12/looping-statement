@@ -371,7 +371,7 @@ while c< 10:
 
 #----------------------------------------------------------------------------#
 
-# wap to print first to 10 harshad no 
+#21 wap to print first to 10 harshad no 
 
 n=1
 c=0
@@ -388,7 +388,7 @@ while c< target:
         print(n)
     n+=1
 
-# wap to print  10 th harshad no 
+#22 wap to print  10 th harshad no 
 
 n=1
 c=0
@@ -407,7 +407,7 @@ while c< target:
             break
     n+=1
 
-# wap to print 6 to 10 harshad no  
+#23 wap to print 6 to 10 harshad no  
 
 n=1
 c=0
