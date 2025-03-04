@@ -1,1 +1,120 @@
+####_______________________________________############
+      # GENERIC METHOD 
 
+
+#1#
+
+
+'''* 
+     *  
+        *
+           *
+               *'''
+
+n=5
+spaces=0
+stars=1
+for row in range(1,n+1):
+    for sp in range(1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+        print('*',end=' ')
+    print()
+    spaces+=1
+    stars+=0
+
+
+#------------------------------------------------------#
+
+#2#
+
+#
+'''     * 
+      * 
+    *  
+  * 
+*
+'''
+n=5
+spaces=n-1
+stars=1
+for row in range(1,n+1):
+    for sp in range(1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+        print('*',end=' ')
+    print()
+    spaces-=1
+    stars+=0
+
+
+#------------------------------------------------------#
+#3#
+
+'''
+* 
+* * 
+* * * 
+* * * * 
+* * * * *
+'''
+
+n=5
+spaces=0
+stars=1
+for row in range(1,n+1):
+    for sp in range(1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+        print('*',end=' ')
+    print()
+    spaces=0
+    stars+=1
+
+#------------------------------------------------------#
+#4#
+'''
+    * * * * *  
+    * * * *  
+    * * *  
+    * *  
+    *
+
+'''
+
+n=5
+spaces=0
+stars=n
+for row in range(1,n+1):
+    for sp in range(1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+        print('*',end=' ')
+    print()
+    spaces=0
+    stars-=1
+#------------------------------------------------------#
+
+#5#
+
+'''
+   * * * * *
+     * * * *
+       * * *
+         * *
+           *
+'''
+
+n=5
+spaces=0
+stars=n
+for row in range(1,n+1):
+    for sp in range(1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+        print('*',end=' ')
+    print()
+    spaces+=1
+    stars-=1
+
+#-------------------------------------------------------------------#
