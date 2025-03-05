@@ -118,3 +118,203 @@ for row in range(1,n+1):
     stars-=1
 
 #-------------------------------------------------------------------#
+#6#
+'''
+           * 
+         * * 
+       * * * 
+     * * * * 
+   * * * * * 
+'''
+n=5
+spaces=n-1
+stars=1
+for row in range(1,n+1):
+    for sp in range(1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+        print('*',end=' ')
+    print()
+    spaces-=1
+    stars+=1
+
+
+
+#------------------------------------------------------#
+#7#
+
+'''  
+            * 
+          * * *
+        * * * * *
+      * * * * * * *
+    * * * * * * * * *
+  * * * * * * * * * * *
+* * * * * * * * * * * * *
+'''
+n=7
+spaces=n-1
+stars=1
+for row in range(1,n+1):
+    for sp in range(1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+        print('*',end=' ')
+    print()
+    spaces-=1
+    stars+=2
+           
+#------------------------------------------------------#
+#8#
+
+
+''' 
+    * * * * * * * * * * * * *
+      * * * * * * * * * * *
+        * * * * * * * * *
+          * * * * * * *
+             * * * * *
+               * * *
+                 *
+
+'''
+
+n=7
+spaces=0
+stars=n*2-1
+for row in range(1,n+1):
+    for sp in range(1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+        print('*',end=' ')
+    print()
+    spaces+=1
+    stars-=2
+
+
+#------------------------------------------------------#
+#9#
+
+
+    '''    
+    
+      * 
+    * * * 
+  * * * * * 
+* * * * * * *         
+  * * * * * 
+    * * * 
+      * 
+    
+    '''
+    
+ 
+n=int(input())
+spaces=n//2
+stars=1
+for row in range(1,n+1):
+    for sp in range(1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+        print('*',end=' ')
+    print()
+    if row<=n//2:
+     spaces-=1
+     stars+=2
+    else:
+     spaces+=1
+     stars-=2
+    
+    
+ #------------------------------------------------------#
+
+#10#
+'''  
+* * * * * 
+  * * *   
+    *     
+  * * *   
+* * * * * 
+
+'''
+    
+    
+n=5
+spaces=0
+stars=n
+for row in range(1,n+1):
+    for sp in range(1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+        print('*',end=' ')
+    print()
+    if row<n//2+1:
+     spaces+=1
+     stars-=2
+    else:
+     spaces-=1
+     stars+=2
+    
+ #------------------------------------------------------#
+#11#
+'''
+* 
+* *
+* * *
+* *
+*
+
+'''
+
+n=5
+spaces=0
+stars=1
+for row in range(1,n+1):
+    for sp in range(1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+        print('*',end=' ')
+    print()
+    if row<n//2+1:
+     spaces=0
+     stars+=1
+    else:
+     spaces=0
+     stars-=1
+
+#----------------------------------------------------#
+#12#
+'''
+ *       *
+ * *   * *
+ * * * * *
+ * *   * *
+ *       *
+ '''
+
+
+
+
+
+#----------------------------------------------------#
+
+#13#
+'''
+* * * * *  
+* * * * *  
+* * * * *  
+* * * * *  
+* * * * *
+'''
+
+n=5
+spaces=0
+stars=n
+for row in range(1,n+1):
+    for sp in range(1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+        print('*',end=' ')
+    print()
+    spaces-=1
+    stars=n
