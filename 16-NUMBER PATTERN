@@ -323,3 +323,268 @@ for row in range (1,n+1):
     spaces+=1
 
 #-----------------------------------------------------------#
+#15#
+'''
+        1 
+      2 1 
+    3 2 1 
+  4 3 2 1 
+5 4 3 2 1 
+
+'''
+
+n=5
+stars=1
+spaces=n-1
+for row in range (1,n+1):
+    dummy=row
+    for sp in range (1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+            print(dummy,end=' ')
+            dummy-=1        
+    print()
+    stars+=1
+    spaces-=1
+    
+
+#----------------------------------------------------#
+
+#16#
+
+
+'''
+5 4 3 2 1 
+  4 3 2 1 
+    3 2 1 
+      2 1 
+        1 
+
+'''
+n=5
+stars=n
+spaces=0
+for row in range (1,n+1):
+    dummy=stars
+    for sp in range (1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+            print(dummy,end=' ')
+            dummy-=1
+    print()
+    stars-=1
+    spaces+=1
+#------------------------------------------------------------------------------------#
+#17#
+
+'''
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+
+'''
+n=5
+dummy=1
+for row in range(1,n+1):
+    for col in range (1,row+1):
+        print(dummy,end=' ')
+        dummy+=1
+    print()
+
+
+
+#----------------------------------------------------#
+
+#18#
+
+'''
+        1 
+      2 4 
+    3 4 5 
+  4 6 8 10 
+5 6 7 8 9 
+
+'''
+
+n=5
+stars=1
+spaces=n-1
+for row in range (1,n+1):
+    dummy=row
+    for sp in range (1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+            print(dummy,end=' ')
+            if row%2==1:
+                dummy+=1
+            else:
+                dummy+=2
+    print()
+    stars+=1
+    spaces-=1
+#-----------------------------------------------------------------------------------#
+#19#
+
+'''
+        1 
+      2 1 
+    3 4 5 
+  4 3 2 1 
+5 6 7 8 9 
+
+'''
+
+
+n=5
+stars=1
+spaces=n-1
+for row in range (1,n+1):
+    dummy=row
+    for sp in range (1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+            print(dummy,end=' ')
+            if row%2==1:
+                dummy+=1
+            else:
+                dummy-=1
+    print()
+    stars+=1
+    spaces-=1
+
+
+
+#----------------------------------------------------#
+
+#20#
+
+'''
+
+5 4 3 2 1 
+5 4 3 2 
+5 4 3 
+5 4 
+5 
+
+
+'''
+
+
+n=5
+stars=n
+spaces=0
+for row in range (1,n+1):
+    dummy=n
+    for sp in range (1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+            print(dummy,end=' ')
+            dummy-=1
+    print()
+    stars-=1
+
+
+
+#----------------------------------------------------#
+
+#21#
+
+'''
+        1 
+      1 2 1 
+    1 2 3 2 1 
+  1 2 3 4 3 2 1 
+1 2 3 4 5 4 3 2 1 
+
+'''
+
+
+n=5
+stars=1
+spaces=n-1
+for row in range (1,n+1):
+    dummy=1
+    for sp in range (1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+            print(dummy,end=' ')
+            if st<=stars//2:
+                dummy+=1
+            else:
+                dummy-=1
+    print()
+    stars+=2
+    spaces-=1
+
+
+#----------------------------------------------------#
+
+#22#
+
+'''
+        1 
+      2 4 2 
+    3 6 9 6 3 
+  4 8 12 16 12 8 4 
+5 10 15 20 25 20 15 10 5 
+
+'''
+
+
+n=5
+stars=1
+spaces=n-1
+for row in range (1,n+1):
+    dummy=row
+    for sp in range (1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+            print(dummy,end=' ')
+            if st<=stars//2:
+                dummy+=row
+            else:
+                dummy-=row
+    print()
+    stars+=2
+    spaces-=1
+
+
+#-----------------------------------------------------#
+
+#23#
+
+'''
+
+      1 
+    1 2 1 
+  1 2 3 2 1 
+1 2 3 4 3 2 1 
+  1 2 3 2 1 
+    1 2 1 
+      1 
+
+
+'''
+
+n=7
+spaces=n//2
+stars=1
+for row in range (1,n+1):
+    dummy=1
+    for sp in range (1,spaces+1):
+        print(' ',end=' ')
+    for st in range(1,stars+1):
+            print(dummy,end=' ')
+            if st<=stars//2:
+                dummy+=1
+            else:
+                dummy-=1
+    print()
+    if row <=n//2:
+        stars+=2
+        spaces-=1
+    else:
+        stars-=2
+        spaces+=1
