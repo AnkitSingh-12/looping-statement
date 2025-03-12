@@ -224,3 +224,102 @@ for row in range (1,n+1):
 
 
 #-----------------------------------------------------------------#
+#11#
+
+'''
+1 1 1 1 1 
+  2 2 2 2 
+    3 3 3 
+      4 4 
+        5 
+
+'''
+
+
+n=5
+dummy=1
+for row in range (1,n+1):
+    for col in range(1,n+1):
+        if row<=col:
+            print(dummy,end=' ')
+        else:
+            print(' ',end=' ')
+    dummy+=1        
+    print()
+
+#-------------------------------------------------------------#
+
+#12#
+
+'''
+1 1 1 1 1 
+2 2 2 2   
+3 3 3     
+4 4       
+5         
+
+'''
+
+
+n=5
+dummy=1
+for row in range (1,n+1):
+    for col in range(1,n+1):
+        if row+col<=n+1:
+            print(dummy,end=' ')
+        else:
+            print(' ',end=' ')
+    dummy+=1        
+    print()
+    
+
+#---------------------------------------------------------------#
+#13#
+
+'''
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+
+'''
+
+
+n=5
+for row in range (1,n+1):
+    dummy=1
+    for col in range(1,n+1):
+        if row >=col:
+            print(dummy,end=' ')
+            dummy+=1         
+    print()
+    
+
+#------------------------------------------------------#
+
+#14#
+
+'''
+1 2 3 4 5 
+1 2 3 4 
+1 2 3 
+1 2 
+1 
+
+'''
+
+
+n=5
+stars=n
+spaces=0
+for row in range (1,n+1):
+    dummy=1
+    for st in range(1,stars+1):
+            print(dummy,end=' ')
+            dummy+=1         
+    print()
+    stars-=1
+    spaces+=1
+
+#-----------------------------------------------------------#
