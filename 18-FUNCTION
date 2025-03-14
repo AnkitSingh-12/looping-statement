@@ -1,0 +1,19 @@
+#1#
+# print prime no in given range by using function approach 
+
+def isprime(n):
+    if n>1:
+       for i in range (2,n//2+1):
+            if n%i==0:
+                return False
+       else:
+            return True
+    else:
+         return False
+def primeNumber(LL,UL):
+    for i in range(LL,UL+1):
+        if isprime(i):
+            print(i)
+primeNumber(1,20)
+
+#----------------------------------------------------------------#
