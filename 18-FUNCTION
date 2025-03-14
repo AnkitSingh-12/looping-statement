@@ -17,3 +17,19 @@ def primeNumber(LL,UL):
 primeNumber(1,20)
 
 #----------------------------------------------------------------#
+
+#2#
+#print even no of given range by using of function approach
+
+def iseven(n):
+    if n%2==0:
+        return True
+    else:
+        return False
+def evenNumber(LL,UL):
+    for i in range(LL,UL+1):
+        if iseven(i):
+            print(i)
+evenNumber(1,10)
+
+#--------------------------------------------------------------------#
