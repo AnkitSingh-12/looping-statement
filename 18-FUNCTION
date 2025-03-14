@@ -66,3 +66,34 @@ def paliprimeNumber(LL,UL):
 paliprimeNumber(1,20)
 
 #-----------------------------------------------------------------#
+#4# print emirp no is given range by using of functional approach 
+
+def isprime(n):
+    if n>1:
+       for i in range (2,n//2+1):
+            if n%i==0:
+                return False
+       else:
+            return True
+    else:
+          return False
+def reverse(n):
+    dummy=n
+    rev=0
+    while dummy>0:
+        rem=dummy%10
+        dummy=dummy//10
+        rev=rev*10+rem
+    return rev
+def isemirp(n):
+     rev=reverse(n)
+     if isprime(n)and isprime(rev)and n!=rev:
+         return True
+     else:
+         return False
+def emirpNumber(LL,UL):
+    for n in range (LL,UL+1):
+        if isemirp(n):
+            print(n)
+emirpNumber(1,20)
+#-----------------------------------------------------------------#
