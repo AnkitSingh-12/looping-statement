@@ -182,3 +182,23 @@ def disariumNumber(LL,UL):
 disariumNumber(1,100)
 
 #-----------------------------------------------------------------------#
+#8#  print HARSHAD no is given range by using of functional approach
+
+def isharshadNo(n):
+    dummy=n
+    sum=0
+    while dummy>0:
+        rem=dummy%10
+        dummy=dummy//10
+        sum+=rem
+    if n%sum==0:
+        return True
+    else:
+        return False
+def harshadNumber(LL,UL):
+    for n in range (LL,UL+1):
+        if isharshadNo(n):
+            print(n)
+harshadNumber(1,20)
+
+#-----------------------------------------------------------------------#
