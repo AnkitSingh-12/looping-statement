@@ -160,3 +160,25 @@ armstrongNumber(1,100)
 
 
 #-----------------------------------------------------------------------#
+#8#  print DISARIUM no is given range by using of functional approach
+
+def isdisariumNo(n):
+    dummy=n
+    sum=0
+    L=len(str(n))
+    while dummy>0:
+        rem=dummy%10
+        dummy=dummy//10
+        sum+=rem**L
+        L-=1
+    if n==sum:
+        return True
+    else:
+        return False
+def disariumNumber(LL,UL):
+    for n in range (LL,UL+1):
+        if isdisariumNo(n):
+            print(n)
+disariumNumber(1,100)
+
+#-----------------------------------------------------------------------#
