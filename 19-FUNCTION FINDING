@@ -208,3 +208,30 @@ def nthperfectNo(target):
         n+=1
 target=int(input())
 nthperfectNo(target)
+
+
+#3#
+#  wap to print a perfect no 6 to 10th  perfect  no using function 
+
+
+def isperfectNo(n):
+    dsum=0
+    for i in range(1,n//2+1):
+      if n%i==0:
+         dsum+=i
+    if dsum==n:
+        return True
+    else:
+        return False
+def perfect_from_5th(n):
+    num=1
+    c=0
+    while c<5:
+        if isperfectNo(num):
+            c+=1
+            if c>=1:
+                print(num)
+        num+=1
+perfect_from_5th(10)        
+
+#-------------------------------------------------------------------------#
