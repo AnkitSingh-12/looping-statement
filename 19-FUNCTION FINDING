@@ -180,3 +180,31 @@ def first_nthperfectNo(target):
         n+=1
 target=int(input())
 first_nthperfectNo(target)
+
+
+
+
+#3#
+#  wap to print a perfect no  nth perfect  no using function 
+
+
+def isperfectNo(n):
+    dsum=0
+    for i in range(1,n//2+1):
+      if n%i==0:
+         dsum+=i
+    if dsum==n:
+        return True
+    else:
+        return False
+def nthperfectNo(target):
+    n=1
+    c=0
+    while c<target:
+        if isperfectNo(n):
+            c+=1
+            if c==target:
+                print(n,end=' ')
+        n+=1
+target=int(input())
+nthperfectNo(target)
