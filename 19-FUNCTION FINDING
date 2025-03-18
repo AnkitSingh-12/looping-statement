@@ -182,8 +182,6 @@ target=int(input())
 first_nthperfectNo(target)
 
 
-
-
 #3#
 #  wap to print a perfect no  nth perfect  no using function 
 
@@ -235,6 +233,7 @@ def perfect_from_5th(n):
 perfect_from_5th(10)        
 
 #-------------------------------------------------------------------------#
+
 #4#
 #  wap to print a armstrong no 1 to 10 armstrong  no using function
  
@@ -322,7 +321,9 @@ def armstrong_from_6th(n):
 armstrong_from_6th(10)
 
 
-#-----------------------------------------------------------------------------------------------#
+#-----------------------------------------------------------------------------------------------#4
+
+
 #5#
 #  wap to print a disarium no 1 to 10th  disarium  no using function 
 
