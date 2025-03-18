@@ -262,6 +262,34 @@ target=int(input())
 
 
 
+#4#
+#  wap to print a armstrong  no nth  armstrong  no using function 
+
+
+def isarmstrongNo(n):
+    dummy=n
+    sum=0
+    L=len(str(n))
+    while dummy>0:
+        rem=dummy%10
+        dummy=dummy//10
+        sum+=rem**L
+    if n==sum:
+        return True
+    else:
+        return False
+
+def ntharmstrongNo(target):
+    n=1
+    c=0
+    while c<target:
+        if isarmstrongNo(n):
+            c+=1
+            if c==target:
+                print(n,end=' ')
+        n+=1
+target=int(input())
+ntharmstrongNo(target)
 
 #-----------------------------------------------------------------------------------------------#
 #5#
