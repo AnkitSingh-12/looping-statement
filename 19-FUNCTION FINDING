@@ -235,3 +235,66 @@ def perfect_from_5th(n):
 perfect_from_5th(10)        
 
 #-------------------------------------------------------------------------#
+#4#
+#  wap to print a disarium no 1 to 10th  disarium  no using function 
+
+def isdisariumNo(n):
+    dummy=n
+    sum=0
+    L=len(str(n))
+    while dummy>0:
+        rem=dummy%10
+        dummy=dummy//10
+        sum+=rem**L
+        L-=1
+    if n==sum:
+        return True
+    else:
+        return False
+def first_nthdisariumNo(target):
+    n=1
+    c=0
+    while c<target:
+        if isdisariumNo(n):
+            print(n)
+            c+=1
+        n+=1
+target=int(input())
+first_nthdisariumNo(target)
+
+
+
+#4#
+#  wap to print a disarium no nth  disarium  no using function
+
+
+def isdisariumNo(n):
+    dummy=n
+    sum=0
+    L=len(str(n))
+    while dummy>0:
+        rem=dummy%10
+        dummy=dummy//10
+        sum+=rem**L
+        L-=1
+    if n==sum:
+        return True
+    else:
+        return False
+
+def nthdisariumNo(target):
+    n=1
+    c=0
+    while c<target:
+        if isdisariumNo(n):
+            c+=1
+            if c==target:
+                print(n,end=' ')
+        n+=1
+target=int(input())
+nthdisariumNo(target)
+
+
+
+
+
