@@ -498,3 +498,30 @@ harshad_from_6th(10)
 
 
 #--------------------------------------------------------------#
+#7#
+#wap to print speical no 1 to 10 th special no using function
+
+def isspecialNo(n):
+    dummy=n
+    sum=0
+    while dummy>0:
+        rem=dummy%10
+        dummy=dummy//10
+        fact=1
+        for i in range (1,rem+1):
+            fact*=i
+        sum+=fact
+    if sum==n:
+        return True
+    else:
+        return False
+def first_nthspecialNo(target):
+    n=1
+    c=0
+    while c<target:
+        if isspecialNo(n):
+            print(n)
+            c+=1
+        n+=1
+target=int(input())
+first_nthspecialNo(target)
