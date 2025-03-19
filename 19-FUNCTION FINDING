@@ -468,3 +468,33 @@ def nthharshadNo(target):
         n+=1
 target=int(input())
 nthharshadNo(target)
+
+
+
+ #6#
+# wap to print harshad no 6 to10 th harshad no using function
+
+def isharshadNo(n):
+    dummy=n
+    sum=0
+    while dummy>0:
+        rem=dummy%10
+        dummy=dummy//10
+        sum+=rem
+    if n%sum==0:
+        return True
+    else:
+        return False
+def harshad_from_6th(n):
+    num = 1
+    c = 0  
+    while c < 10: 
+        if isharshadNo(num):
+            c += 1
+            if c >= 6:  
+                print(num)
+        num += 1  
+harshad_from_6th(10)
+
+
+#--------------------------------------------------------------#
