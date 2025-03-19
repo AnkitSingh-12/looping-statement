@@ -30,4 +30,41 @@ def trianglealphabet(n):
         spaces-=1
 trianglealphabet(7)
 
-#-----------------------------------------------------#
+#--------------------------------------------------------------------------#
+
+#2#
+
+'''
+      A 
+    A B A 
+  A B C B A 
+A B C D C B A 
+  A B C B A 
+    A B A 
+      A 
+
+'''
+
+def diamondalphabet(n):
+    spaces=n//2
+    stars=1
+    for row in range (1,n+1):
+        dummy=1
+        for sp in range (1,spaces+1):
+            print(' ',end=' ')
+        for st in range(1,stars+1):
+            print(chr(64+dummy),end=' ')
+            if st<=stars//2:
+                dummy+=1
+            else:
+                dummy-=1
+        print()
+        if row <=n//2:
+            stars+=2
+            spaces-=1
+        else:
+            stars-=2
+            spaces+=1
+diamondalphabet(7)
+
+#------------------------------------------------------------------------------#
