@@ -414,3 +414,28 @@ disarium_from_6th(10)
 
 
 #------------------------------------------------------------------------------#
+#6#
+# wap to print harshad no 1 to 10 th harshad no using function
+
+
+def isharshadNo(n):
+    dummy=n
+    sum=0
+    while dummy>0:
+        rem=dummy%10
+        dummy=dummy//10
+        sum+=rem
+    if n%sum==0:
+        return True
+    else:
+        return False
+def first_nthharshadNo(target):
+    n=1
+    c=0
+    while c<target:
+        if isharshadNo(n):
+            print(n)
+            c+=1
+        n+=1
+target=int(input())
+first_nthharshadNo(target)
