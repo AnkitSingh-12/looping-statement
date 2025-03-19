@@ -557,3 +557,35 @@ def nthspecialNo(target):
         n+=1
 target=int(input())
 nthspecialNo(target)
+
+
+
+
+
+#7#
+#wap to print speical no 6 to 10 th special no using function
+
+def isspecialNo(n):
+    dummy=n
+    sum=0
+    while dummy>0:
+        rem=dummy%10
+        dummy=dummy//10
+        fact=1
+        for i in range (1,rem+1):
+            fact*=i
+        sum+=fact
+    if sum==n:
+        return True
+    else:
+        return False
+def special_from_6th(n):
+    num = 1
+    c = 0  
+    while c < 4: 
+        if isspecialNo(num):
+            c += 1
+            if c >= 1:  
+                print(num)
+        num += 1  
+special_from_6th(4)
